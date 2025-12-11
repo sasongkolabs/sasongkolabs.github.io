@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="My research notes, organized ideas, thoughts, and important information in a digital format for easy access and reference." />
+	<meta name="keywords" content="software engineering, artificial intelligence, algorithmic trading, finance, investment, trading" />
+	<meta name="author" content="@rnchyd" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+	<!-- Modernizr JS -->
+	<script src="/_assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/_assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- ashnazg theme -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="/_assets/css/styles.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>
+      My Pages - An Author&#39;s Non-Techie Guide to Google Analytics 4
+    </title>
+    <link rel="stylesheet" href="/_assets/css/md.css" />
+    <link href='https://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet'>
+    <style>
+        p {
+            font-size: 18px;
+            letter-spacing: 0;
+            margin: 0 0 16px;
+          }
+  
+        ul, ol {
+          font-size: 18px;
+          line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout">
+
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/archives">Archives</a>
+        <a class="mdl-navigation__link" href="/about">About</a>
+        <a class="mdl-navigation__link" href="/rss.xml">RSS</a>
+      </nav>
+    </div>
+    <div class="demo-ribbon"></div>
+    <main class="demo-main mdl-layout__content">
+      <div class="demo-container mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div
+          class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+          <div class="demo-crumbs mdl-color-text--grey-500">
+            <span class="mdl-chip">
+              <span class="mdl-chip__text"><a class="mdl-navigation__link" href="/">Home</a></span>
+            </span>
+            <span class="mdl-chip">
+              <span class="mdl-chip__text"><a class="mdl-navigation__link" href="/archives">Archives</a></span>
+            </span>
+            <span class="mdl-chip">
+              <span class="mdl-chip__text"><a class="mdl-navigation__link" href="/about">About</a></span>
+            </span>
+            <span class="mdl-chip">
+              <span class="mdl-chip__text"><a class="mdl-navigation__link" href="/rss.xml">RSS</a></span>
+            </span>
+
+          </div>
+          <article>
+            <header>
+              <h1 style="font-family: 'Stalemate';">
+                An Author&#39;s Non-Techie Guide to Google Analytics 4
+              </h1>
+              <div class="article-info">
+                <div>
+                  <span>Created At：<time datetime="1765427501100">
+                      2025-12-11 11:31
+                    </time></span>
+                  <span>Updated At：<time datetime="1765446972891">
+                      2025-12-11 16:56
+                    </time></span>
+                </div>
+                
+              </div>
+            </header>
+            <div class="article-content markdown-body"><p><strong>Follow these steps to set up GA4, verify tracking, and uncover which platforms, campaigns, and UTM links lead to actual book sales</strong></p>
+<p><img src="/_resources/a68d5ff4a2dc4e2494bbb019e1385522.png" /></p>
+<p>In our last briefing, you learned how to plant digital breadcrumbs—UTM parameters—to track who’s clicking your book links. But tracking a clue is only the beginning. Real insight comes when you follow that trail all the way to its destination: <strong>Google Analytics 4 (GA4)</strong>.</p>
+<p>Imagine GA4 as your personal command center. Every click from your Instagram post, email campaign, or podcast link shows up here, sorted, timestamped, and ready for analysis. Without GA4, you’re holding scattered puzzle pieces. With it, you start to see the full picture of what’s actually working.</p>
+<p>This guide is your <strong>Non-Techie Field Manual</strong> for getting GA4 up and running. We’ll cut through the technical noise and walk you through only the steps that matter—so you can confidently answer one question: <strong>Is my marketing leading readers to buy my book?</strong></p>
+<h2 id="part-1-the-why-why-ga4-is-your-new-best-friend"><strong>Part 1: The “Why” – Why GA4 is Your New Best Friend</strong></h2>
+<p>For years, authors relied on Universal Analytics (UA) to understand their audience. That system was retired in 2023. Google Analytics 4—GA4—is now the standard, designed for how people browse today: across phones, tablets, and computers, with stronger privacy protections built in.</p>
+<p>What makes GA4 especially powerful for you is its <strong>event-based tracking</strong>. Every meaningful interaction—like viewing a page, clicking a link, or downloading a sample chapter—is recorded as an “event.” This lets you follow the exact path a reader takes, from your Instagram post all the way to your book’s sales page. You’re not just counting visits; you’re mapping real interest.</p>
+<h2 id="part-2-the-setup-planting-your-tracking-beacon-10-minutes"><strong>Part 2: The Setup – Planting Your Tracking Beacon (10 Minutes)</strong></h2>
+<p>Your next step is to create a GA4 property and install its tracking code on your author website. Think of this code as a quiet, reliable observer—it watches what visitors do on your site and sends that information straight to your GA4 dashboard.</p>
+<p>Here’s the simplest way to get it done, with options that match your tech comfort level:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Best For…</th>
+<th style="text-align:left">The Process</th>
+<th style="text-align:left">Pro-Tip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Your Website Builder/CMS</strong></td>
+<td style="text-align:left">Authors using Squarespace, Wix, Shopify, or WordPress.com.</td>
+<td style="text-align:left">Most platforms include a dedicated field for your “Measurement ID” (it starts with <code>G-</code>). Just copy that ID from GA4 and paste it into your site settings.</td>
+<td style="text-align:left">Look under “Analytics,” “Tracking,” or “Integrations” in your admin panel. This is the fastest route to success.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Tag Manager (GTM)</strong></td>
+<td style="text-align:left">Authors who want more control without coding.</td>
+<td style="text-align:left">1. Set up a GTM account and install its container code on your site.<br class="jop-noMdConv" />2. In GTM, create a new “GA4 Configuration” tag and enter your Measurement ID.<br class="jop-noMdConv" />3. Preview your setup, test it, then publish.</td>
+<td style="text-align:left">GTM unlocks advanced tracking later—like monitoring button clicks or form submissions—without touching your site’s code again.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Manual Code Installation</strong></td>
+<td style="text-align:left">Authors with a custom-built site and HTML access.</td>
+<td style="text-align:left">Copy the global site tag from your GA4 data stream and paste it into the <code>&lt;head&gt;</code> section of every page.</td>
+<td style="text-align:left">If you’re unsure, ask your web developer—they’ll likely do it in minutes. It’s a one-and-done task.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Your First Check:</strong> Once the code is live, open the <strong>Realtime report</strong> in GA4 (found in the left-hand menu). Then, visit your own website. Within 30 seconds, your visit should appear on the activity map. When it does, you’ll know your beacon is working—and your data stream has begun.</p>
+<h2 id="part-3-the-investigation-finding-your-book-marketing-evidence"><strong>Part 3: The Investigation – Finding Your Book Marketing Evidence</strong></h2>
+<p>GA4’s dashboard can seem overwhelming at first glance. As a busy author, you don’t need to explore everything—just focus on two high-value areas that deliver real answers about your marketing.</p>
+<h3 id="1-the-traffic-acquisition-report-your-master-clue-file"><strong>1. The “Traffic Acquisition” Report (Your Master Clue File)</strong></h3>
+<p>This report shows exactly where your visitors are coming from—and which efforts are paying off.</p>
+<ul>
+<li><strong>Navigate to:</strong> Reports &gt; Acquisition &gt; <strong>Traffic acquisition</strong>.</li>
+<li><strong>Customize for clarity:</strong> Click the pencil icon to edit the report, then add the column <strong>“Session campaign.”</strong> This reveals every UTM-tagged campaign you’ve run—like <code>instagram_spring_launch</code> or <code>newsletter_may_offer</code>.</li>
+<li><strong>Read the evidence:</strong> You’ll see which campaigns brought in the most visitors, held their attention longest, and led to the most conversions. That’s how you know whether your time on TikTok, email, or Instagram is truly moving the needle for your book.</li>
+</ul>
+<h3 id="2-funnel-exploration-mapping-the-readers-journey"><strong>2. Funnel Exploration (Mapping the Reader’s Journey)</strong></h3>
+<p>This tool helps you see the exact path readers take—or where they disappear—on their way to buying your book.</p>
+<ul>
+<li><strong>Navigate to:</strong> Explore &gt; <strong>Funnel exploration</strong>.</li>
+<li><strong>Create a simple “Book Sales” funnel</strong> with steps like:
+<ol>
+<li><strong>Landing page view</strong> (e.g., your book’s promotional page, reached from a social post).</li>
+<li><strong>Scroll depth</strong> (e.g., reaching 75% of the page—proof they’re engaged).</li>
+<li><strong>Outbound click</strong> (the tap that takes them to Amazon, Bookshop.org, or another retailer).</li>
+</ol>
+</li>
+<li><strong>Uncover the insight:</strong> The funnel displays the percentage of people who leave at each stage. If 100 visitors land on your page but only 2 click through to a store, your next move is clear: strengthen your call-to-action, clarify your offer, or streamline the purchase path.</li>
+</ul>
+<h2 id="part-4-the-authors-edge-a-custom-dashboard-for-your-case-board"><strong>Part 4: The Author’s Edge – A Custom Dashboard for Your Case Board</strong></h2>
+<p>Why search for clues every time you log in? Create a custom dashboard that puts your most important evidence front and center.</p>
+<ol>
+<li>From the <strong>Reports Snapshot</strong>, click the pencil icon labeled “Customize report.”</li>
+<li>Remove the default cards and <strong>add the ones that matter most</strong>: “Users by Session campaign,” “Views by Page title,” and “Conversions.”</li>
+<li><strong>Save your layout.</strong> Now, every time you open GA4, you’ll land on your personal “Book Marketing Command Center”—a clear, focused view of what’s working and where readers are engaging.</li>
+</ol>
+<h2 id="part-5-connecting-to-the-final-piece-amazon-sales"><strong>Part 5: Connecting to the Final Piece – Amazon Sales</strong></h2>
+<p>GA4 shows you the path readers take <em>to</em> your book’s sales page. To close the loop and see actual purchases, you have two practical options:</p>
+<ul>
+<li><strong>Amazon Attribution:</strong> If you’re a KDP author enrolled in Amazon Brand Registry, this free tool generates special tracked links for your off-Amazon marketing—like Instagram posts or email campaigns. It reports clicks, detail page views, and most importantly, <strong>real sales generated on Amazon</strong>. For authors, this is the closest thing to a direct line from promotion to profit.</li>
+<li><strong>Estimated Sales in GA4:</strong> Even without Amazon Attribution, you can estimate campaign value. If you know your average book profit and typical conversion rate, GA4 lets you create a custom metric that translates traffic into projected revenue.</li>
+</ul>
+<p><strong>Your Assignment, Detective:</strong></p>
+<ol>
+<li><strong>Set up your GA4 property</strong> using the method that best fits your website.</li>
+<li><strong>Confirm it’s live</strong> by checking the Realtime report after visiting your own site.</li>
+<li><strong>Customize your Traffic Acquisition report</strong> to display “Session campaign” so your UTM-tagged efforts are visible.</li>
+<li><strong>Review the data one week</strong> after launching your tagged links—and follow the trail they leave behind.</li>
+</ol>
+<p>When your UTM breadcrumbs feed into your GA4 command center, guesswork disappears. You’ll see precisely which platforms bring in curious readers—and which messages turn them into buyers.</p>
+<h2 id="faqs-for-the-author-detective"><strong>FAQs for the Author-Detective</strong></h2>
+<blockquote>
+<p><strong>"Do I need a website to use GA4?"</strong><br />
+Not strictly—but you’ll miss out on most of GA4’s power. You <em>can</em> send UTM-tagged links straight to your Amazon book page, but without a website, you can’t track how readers engage with your message before they buy. Even a basic one-page site gives you insight into what’s capturing attention and what’s not.</p>
+</blockquote>
+<blockquote>
+<p><strong>"This seems complex. Can’t I just use Amazon KDP reports?"</strong><br />
+Amazon KDP reports show you <em>what</em> sold and <em>when</em>—but not <em>how</em> or <em>why</em>. They won’t tell you whether a sale came from your newsletter, a podcast mention, or a Facebook post. GA4 and Amazon Attribution connect your marketing actions directly to results, so you know exactly what’s working.</p>
+</blockquote>
+<blockquote>
+<p><strong>"What’s the one thing I should check every week?"</strong><br />
+Your customized <strong>Traffic Acquisition</strong> report. Spend five minutes each week reviewing which campaigns brought in the most engaged visitors. That simple habit reveals which platforms and messages are earning real attention—and which deserve your next effort.</p>
+</blockquote>
+</div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
